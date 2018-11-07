@@ -35,9 +35,9 @@ metadata:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
   ports:
-  - port: 30000
+  - port: 80
     targetPort: 8080
   selector:
     app: twitter-feed
-  type: ClusterIP
+  type: LoadBalancer
 ---
